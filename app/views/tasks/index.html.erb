@@ -1,0 +1,12 @@
+<h1>Welcome to your Task Manager</h1>
+
+
+<% @tasks.each do |task|%>
+<ul>
+<input type="checkbox" name="tag_ids[]" value="1" />
+<%= link_to task.title, tasks_inform_path%>
+
+</ul>
+
+<%end%>
+<%= link_to "Create +", tasks_new_path %>

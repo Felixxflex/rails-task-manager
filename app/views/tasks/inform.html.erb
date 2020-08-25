@@ -1,0 +1,14 @@
+<h1>Informations</h1>
+
+<% @tasks.each do |i|%>
+<ul>
+
+<%= i.details%>
+ <p><input type="checkbox" name="tag_ids[]" value="1" />This task is not completed yet</p>
+
+</ul>
+<%end%>
+
+<%= link_to "Go back mate", tasks_path %>
+
+<%= link_to "Edit Task", tasks_new_path %>
